@@ -1,0 +1,150 @@
+body, html {
+    height: 100%; 
+}
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("./src/Assets/Images/third-portfolio-unsplash.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hero-text-projects {
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Roboto Mono', monospace; */
+  }
+
+h1, h2, p {
+  font-family: 'Raleway', sans-serif;
+
+}
+
+ button {
+    border: solid;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+
+  
+  .btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+
+.button-hover-reveal-wrapper {
+   position: absolute;
+    overflow: hidden;
+    border: .5px solid white;
+    border-radius: 5000px;
+    text-align: center;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .button-hover-reveal-wrapper:hover {
+    border: none;
+    transition: background-color 0.5s ease;
+  }
+  
+  .button-hover-reveal-wrapper:hover .button-hover-reveal {
+    display: block;
+    font-size: 16px;
+    padding: 22px;
+  }
+  
+  .button-hover-reveal-wrapper:hover .button-hover-reveal:hover {
+    transition: background-color 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-hover-reveal-wrapper:hover label {
+    display: none;
+  }
+  
+  .button-hover-reveal-wrapper .button-hover-reveal {
+    display: none;
+    color: #fefefe;
+    width: 50%;
+    z-index: 1;
+  }
+  
+  .button-hover-reveal-wrapper label {
+    padding: 16px;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .project-image{
+    width: 20%;
+    height: 10vw;
+    object-fit: cover;
+  }
+  i {
+    color: white;
+    opacity: 0.6;
+    padding-left: 25px;
+  }
+
+  i:hover {
+    opacity: 0.90;
+  }
+
+
+
+  .about-me-container {
+   width: 25%;
+   padding: 0 10px;
+  }
+
+  .pam-pic{
+    float: left;
+  }
+  /* .grid-container {
+    top: 50%;
+    left: 50%;
+  } */
+.project-pic {
+  float: left;
+  margin-right: 15px;
+  width:30%;
+  height:30%;
+  margin-right:15px;
+  border: solid black 1px;
+}
+.project-pic:hover {
+  opacity: 0.50;
+}

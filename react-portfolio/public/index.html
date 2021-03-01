@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Pamela Gutierrez</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <div class="hero-image">
+
+    <div class="hero-text">
+      <h1>Pamela Gutierrez</h1>
+      <h2><small>Web Developer | Travel Lover</small></h2>
+      <p>(510) 305-0980 &emsp;gtrz.pamela@gmail.com</p>
+      <br>
+      <!-- SHOW FOR LG/MD SCREENS, HIDE FOR SMALL SCREEN -->
+      <div class="button-hover-reveal-wrapper hide-for-small-only">
+        <label>Learn More</label>
+        <a href="assets/Pamela_Gutierrez_-_Web_Developer (2).pdf" target="_blank" class="button-hover-reveal">Resume</a>
+        <a data-open="about_modal" class="button-hover-reveal">
+          About Me</a>
+        <a data-open="projects_modal" class="button-hover-reveal">Projects</a>
+      </div>
+      <div class="icons hide-for-small-only" style="margin-top:100px;">
+        <a href="https://github.com/pamela-gutierrez" target="_blank" class="button-hover-reveal"><i
+            class="fab fa-github fa-3x"></i></a>
+        <a href="mailto:pgutierrez44@gmail.com" target="_blank" class="button-hover-reveal"><i
+            class="far fa-envelope fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/pamela-gutierrez" target="_blank" class="button-hover-reveal">
+          <i class="fab fa-linkedin fa-3x"></i></a>
+      </div>
+      <!-- SHOW FOR SMALL SCREEN ONLY -->
+      <div class="grid-x show-for-small-only" style="margin-bottom:10px;">
+        <div class="cell" style="margin-bottom: 70px;">
+          <div class="button-hover-reveal-wrapper show-for-small-only">
+            <label>Resume</label>
+            <!-- RESUME BUTTON -->
+            <a href="assets/Pamela_Gutierrez_-_Web_Developer (2).pdf" target="_blank"
+              class="button-hover-reveal">Resume</a>
+          </div>
+        </div>
+        <div class="cell" style="margin-bottom: 70px;">
+          <div class="button-hover-reveal-wrapper show-for-small-only">
+            <label>About Me</label>
+            <a data-open="about_modal" class="button-hover-reveal">
+              About Me</a>
+          </div>
+        </div>
+        <div class="cell" style="margin-bottom:70px;">
+          <div class="button-hover-reveal-wrapper show-for-small-only">
+            <label>Projects</label>
+            <a data-open="projects_modal" class="button-hover-reveal">Projects</a>
+          </div>
+        </div>
+        <div>
+          <a href="https://github.com/pamela-gutierrez" target="_blank" class="button-hover-reveal"><i
+              class="fab fa-github fa-3x"></i></a>
+          <a href="mailto:pgutierrez44@gmail.com" target="_blank" class="button-hover-reveal"><i
+              class="far fa-envelope fa-3x"></i></a>
+          <a href="https://www.linkedin.com/in/pamela-gutierrez" target="_blank" class="button-hover-reveal">
+            <i class="fab fa-linkedin fa-3x"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="large reveal" id="about_modal" data-reveal>
+    <h2>About Me</h2>
+    <p><img class="pam-pic" src="assets/portfolio-pic.jpg" style="width:30%;height:30%;margin-right:15px;">My name
+      is
+      Pamela Gutierrez
+      and I
+      consider myself a jack of
+      many trades! I've recently transitioned into the field of web development and am currently enrolled in the
+      UC Berkeley Coding Bootcamp where I'm enjoying new chanllenges and learning to improve my skills each day.
+      Prior to this, I worked in the hospitality and tourism industry which took me across the world holding
+      different management and leadership positions. I've worked in places as diverse as the Guatemalan jungle and
+      the Australian Outback and have found that this quick adaptability has served me well as I transition into a
+      new career. I'm excited for what this next step will hold and I hope to merge my many passions in pursuit of
+      a rewarding career and eventually the digital nomad life!
+    </p>
+
+    <button class="close-button" data-close aria-label="Close modal" type="button" style="border:none;">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="large reveal" id="projects_modal" data-reveal>
+    <h2>Featured Projects</h2>
+    <div class="grid-x">
+      <div class="cell">
+        <div class="workday-scheduler"><a href="https://pamela-gutierrez.github.io/workday-scheduler/"
+            target="_blank"><img class="project-pic" src="assets/workday-pic.png"></a>
+          <h4>Work Day Scheduler</h4>
+          <p>This application is a work day scheduler which allows the user to plan their day during the
+            tyical
+            business hours of 9am to 5pm.</p>
+          <a href="https://pamela-gutierrez.github.io/workday-scheduler/" target="_blank">Go to Deployed
+            Site</a><br>
+          <a href="https://github.com/pamela-gutierrez/workday-scheduler" target="_blank">Go to GitHub
+            Repository</a>
+        </div>
+      </div>
+      <div class="cell" style="margin-top:10px;">
+        <div class="undwind"><a href="https://pamela-gutierrez.github.io/Unwind/" target="_blank"><img
+              class="project-pic" src="assets/Screen Shot 2021-01-14 at 23.55.29.png"></a>
+          <h4>Be a Human: Undwind</h4>
+          <p>This application was built as part of a group and is intended to help the user plan an unplugged
+            day
+            of
+            leisure with books, parks, and coffeeshops.</p>
+
+          <a href="https://pamela-gutierrez.github.io/Unwind/">Go to Deployed Site</a><br><a
+            href="https://github.com/pamela-gutierrez/Unwind">Go to GitHub Respository</a>
+        </div>
+        <button class="close-button" aria-label="Close alert" type="button" data-close style="border:none;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $(document).foundation();
+    })
+  </script>
+  <script src="https://kit.fontawesome.com/a7978ebb6a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
