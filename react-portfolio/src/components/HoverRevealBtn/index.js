@@ -1,7 +1,7 @@
 import React from "react";
 // import "../style.css"
 
-function HoverReavealBtn() {
+function HoverRevealBtn() {
     <div>
         <div className="button-hover-reveal-wrapper hide-for-small-only">
             <label>Learn More</label>
@@ -54,4 +54,4 @@ function HoverReavealBtn() {
     </div >
 }
 
-export default HoverReavealBtn;
+export default HoverRevealBtn;
