@@ -1,3 +1,36 @@
+html {
+  height: 100%; 
+}
+
+body {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("https://github.com/pamela-gutierrez/updated-portfolio/blob/main/assets/third-portfolio-unsplash.jpg?raw=true");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hero-text-projects {
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
+}
 
 h1, h2, p {
 font-family: 'Raleway', sans-serif;
@@ -114,14 +147,4 @@ border: solid black 1px;
 }
 .project-pic:hover {
 opacity: 0.50;
-}
-
-.aboutMe{
-  margin-top: 50px;
-  background-color: #E6E6E6;
-  padding: 10px;
-}
-
-.PamPic {
-  float: left;
 }

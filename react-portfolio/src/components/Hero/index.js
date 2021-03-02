@@ -1,8 +1,11 @@
 import React from "react";
-// import "./index.css";
+import Resume from "./pam-resume.pdf";
+import "./index.css"
+import { Link } from "react-router-dom";
 
 function Hero() {
     return (
+
         <div className="hero-image">
             <div className="hero-text">
                 <h1>Pamela Gutierrez</h1>
@@ -11,18 +14,24 @@ function Hero() {
                 <br />
                 <div className="button-hover-reveal-wrapper hide-for-small-only">
                     <label>Learn More</label>
-                    <a href="assets/Pamela_Gutierrez_-_Web_Developer (2).pdf" target="_blank"
+                    <a href={Resume} target="_blank" rel="noreferrer"
                         className="button-hover-reveal">Resume</a>
-                    <a className="button-hover-reveal">
-                        About Me</a>
-                    <a className="button-hover-reveal">Projects</a>
+
+                    <Link to={"/about"}>
+                        <a className="button-hover-reveal">About Me</a>
+                    </Link>
+
+                    <Link to={"/projects"}>
+                        <a className="button-hover-reveal">Projects</a>
+                    </Link>
+
                 </div>
                 <div className="icons hide-for-small-only" style={{ marginTop: 100 }}>
-                    <a href="https://github.com/pamela-gutierrez" target="_blank" className="button-hover-reveal"><i
+                    <a href="https://github.com/pamela-gutierrez" target="_blank" rel="noreferrer" className="button-hover-reveal"><i
                         className="fab fa-github fa-3x"></i></a>
-                    <a href="mailto:pgutierrez44@gmail.com" target="_blank" className="button-hover-reveal"><i
+                    <a href="mailto:pgutierrez44@gmail.com" target="_blank" rel="noreferrer" className="button-hover-reveal"><i
                         className="far fa-envelope fa-3x"></i></a>
-                    <a href="https://www.linkedin.com/in/pamela-gutierrez" target="_blank" className="button-hover-reveal">
+                    <a href="https://www.linkedin.com/in/pamela-gutierrez" target="_blank" rel="noreferrer" className="button-hover-reveal">
                         <i className="fab fa-linkedin fa-3x"></i></a>
                 </div>
                 {/* // <!--SHOW FOR SMALL SCREEN ONLY-- > */}
@@ -31,7 +40,7 @@ function Hero() {
                         <div className="button-hover-reveal-wrapper show-for-small-only">
                             <label>Resume</label>
                             {/* <!-- RESUME BUTTON --> */}
-                            <a href="assets/Pamela_Gutierrez_-_Web_Developer (2).pdf" target="_blank"
+                            <a href="assets/Pamela_Gutierrez_-_Web_Developer (2).pdf" target="_blank" rel="noreferrer"
                                 className="button-hover-reveal">Resume</a>
                         </div>
                     </div>
@@ -49,17 +58,25 @@ function Hero() {
                         </div>
                     </div>
                     <div>
-                        <a href="https://github.com/pamela-gutierrez" target="_blank" className="button-hover-reveal"><i
+                        <a href="https://github.com/pamela-gutierrez" target="_blank" rel="noreferrer" className="button-hover-reveal"><i
                             className="fab fa-github fa-3x"></i></a>
-                        <a href="mailto:pgutierrez44@gmail.com" target="_blank" className="button-hover-reveal"><i
+                        <a href="mailto:pgutierrez44@gmail.com" target="_blank" rel="noreferrer" className="button-hover-reveal"><i
                             className="far fa-envelope fa-3x"></i></a>
-                        <a href="https://www.linkedin.com/in/pamela-gutierrez" target="_blank" className="button-hover-reveal">
+                        <a href="https://www.linkedin.com/in/pamela-gutierrez" target="_blank" rel="noreferrer" className="button-hover-reveal">
                             <i className="fab fa-linkedin fa-3x"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+
     )
 }
 
 export default Hero;
+
+
+
+{/* <Link to={"/about"}>
+< a className="button-hover-reveal">
+    About Me</a>
+</Link> */}
