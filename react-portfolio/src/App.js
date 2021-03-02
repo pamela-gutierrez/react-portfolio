@@ -1,14 +1,21 @@
-import logo from './logo.svg';
 import React from "react";
-import './App.css';
-import Hero from "./Hero"
-// import "style.css"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import "./index.css"
+import Home from "./pages/Home"
+import AboutMe from "./pages/About"
+
 
 function App() {
     return (
-        <Hero>
-            <HoverRevealBtn />
-        </Hero>
+        <div>
+            <Router>
+                <div>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/About" component={AboutMe} />
+                    {/* <Route exact path="/Projects" component={Projects} /> */}
+                </div>
+            </Router>
+        </div>
     )
 }
 
