@@ -25,6 +25,8 @@ function Projects() {
                         name={pro.name}
                         description={pro.description}
                         image={pro.image}
+                        github={pro.github}
+                        deployed={pro.deployed}
                     />
                 })}
             </div>

@@ -73,10 +73,3 @@ function Hero() {
 }
 
 export default Hero;
-
-
-
-{/* <Link to={"/about"}>
-< a className="button-hover-reveal">
-    About Me</a>
-</Link> */}

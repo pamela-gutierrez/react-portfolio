@@ -25,8 +25,3 @@ function App() {
 
 export default App;
 
-{/* <Link to={"/projects"}>
-    <a>
-        <button></button>
-    </a>
-</Link> */}
