@@ -19,6 +19,7 @@ function Projects() {
             <NavBar />
 
             <div className="grid-container">
+
                 {AllProjects.map((pro) => {
                     return <Project
                         name={pro.name}
@@ -28,6 +29,7 @@ function Projects() {
                 })}
             </div>
         </div>
+
     )
 }
 
