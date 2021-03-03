@@ -124,4 +124,10 @@ opacity: 0.50;
 
 .PamPic {
   float: left;
+  padding: 20px;
+  margin-bottom: 10px;
 }
+/* 
+.cardPics {
+  max-width: 150px;
+} */
